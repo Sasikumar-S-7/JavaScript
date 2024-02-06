@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject</title>
+</head>
+<body>
+    <label>Tamil</label>
+    <input id="tamil" type="text"/>
+    <label>English</label>
+    <input id="english" type="text"/>
+    <label>Maths</label>
+    <input id="maths" type="text"/>
+    <label>Science</label>
+    <input id="science" type="text"/>
+    <label>Social Science</label>
+    <input id="social" type="text"/>
+
+    <button onclick="subject()">Result:</button>
+
+    <div id="result"></div>
+
+<script>
+    function subject(){
+        var tamil = Number(document.getElementById("tamil").value);
+        var english = Number(document.getElementById("english").value);
+        var maths = Number(document.getElementById("maths").value);
+        var science = Number(document.getElementById("science").value);
+        var social = Number(document.getElementById("social").value);
+
+        var result = "";
+
+        if(tamil >= 35) {
+            result += "Tamil Pass<br>";
+        } else {
+            result += "Tamil Fail<br>";
+        }
+
+        if(english >= 35) {
+            result += "English Pass<br>";
+        } else {
+            result += "English Fail<br>";
+        }
+
+        if(maths >= 35) {
+            result += "Maths Pass<br>";
+        } else {
+            result += "Maths Fail<br>";
+        }
+
+        if(science >= 35) {
+            result += "Science Pass<br>";
+        } else {
+            result += "Science Fail<br>";
+        }
+
+        if(social >= 35) {
+            result += "Social Pass<br>";
+        } else {
+            result += "Social Fail<br>";
+        }
+
+        document.getElementById('result').innerHTML = result;
+    }
+</script>
+
+
+
+<br><br>
+<input type="text" name="name" id="new1">
+<!-- <input type="text" name="name" id="new21"> -->
+
+<!--  -->
+
+<button type="button" onclick=fun()>click</button>
+<script>
+    function fun(){
+     var name = document.getElementById('new1').value;
+    var x= prompt(name);
+    document.getElementById('new1').value=x;
+     
+    }
+</script>
+<br><br><br><br>
+
+
+<!-- bitwise operator -->
+
+<!-- 5 =  00011
+     3 =      -->
+<!-- ------------ -->
+     <!-- 0110    -->
+
+     <script>
+        let a=15,b=2 ;
+        c=  a >>> b;
+        document.write(c);
+     </script>
+
+</body>
+</html>
